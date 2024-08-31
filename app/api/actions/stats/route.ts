@@ -26,7 +26,7 @@ export async function GET(req: Request) {
     description:
       "Check your solana transaction activity from last one year and mint the transaction heatmap NFT easily using this blink",
     label: "stats",
-    icon: new URL("/stats.png", url.origin).toString(),
+    icon: "https://stats-5em0.onrender.com/stats.png",
     links: {
       actions: [
         {

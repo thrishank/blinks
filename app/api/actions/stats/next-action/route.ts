@@ -20,7 +20,7 @@ export const POST = async (req: Request) => {
     const payload: NextAction = {
       type: "action",
       title: "mint the NFT for 0.01 SOL",
-      icon: new URL(`/stats/${stat_account}.png`, url.origin).toString(),
+      icon: `https://stats-5em0.onrender.com/stats/${stat_account}.png`,
       label: "Complete!",
       description: `Mint this tweet for 1$`,
       links: {
