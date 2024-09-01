@@ -140,7 +140,7 @@ export async function POST(req: Request) {
   const heatmapBuffer = Buffer.from(heatmapDataUri.split(",")[1], "base64");
 
   fs.writeFileSync(
-    `/blinks-shopify/public/stats/${stat_account}.png`,
+    `/var/task/stats/public/stats/${stat_account}.png`,
     heatmapBuffer
   );
 

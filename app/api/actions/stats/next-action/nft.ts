@@ -27,7 +27,7 @@ umi.use(signerIdentity(signer));
 export const createNFT_GIT = async (stat_account: string) => {
   try {
     const imageupload = await readFile(
-      `/blinks-shopify/public/stats/${stat_account}.png`
+      `/var/task/stats/public/stats/${stat_account}.png`
     );
     const imageConv = createGenericFile(imageupload, "txActicity-rug", {
       tags: [
@@ -44,8 +44,7 @@ export const createNFT_GIT = async (stat_account: string) => {
     const metadata = {
       name: "Tx activity stats",
       symbol: "TXH",
-      description:
-        `Transaction Activity heat map of this ${stat_account} address for the past one year`,
+      description: `Transaction Activity heat map of this ${stat_account} address for the past one year`,
       image: image[0],
       attributes: [{ trait_type: "material", value: "?" }],
       properties: {

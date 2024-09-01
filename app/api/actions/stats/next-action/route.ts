@@ -21,6 +21,7 @@ export const POST = async (req: Request) => {
       type: "action",
       title: "mint the NFT for 0.01 SOL",
       icon: `https://stats-5em0.onrender.com/stats/${stat_account}.png`,
+      // icon: new URL(`/stats/${stat_account}.png`, url.origin).toString(),
       label: "Complete!",
       description: `Mint this tweet for 1$`,
       links: {
